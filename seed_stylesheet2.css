@@ -28,6 +28,7 @@ header{
 }
 .menu-icon{
     display:none !important;
+    opacity:0; /*githubだと、menu-iconが消えてくれないので、透過させといた*/
 }
 .ontitle{
     padding:15px 0px 0px 50px;
@@ -493,6 +494,7 @@ footer{
     /*menu1を修正します*/
     .menu-icon{
         display:none !important;
+        opacity:none;
     }
     .img1-tab{
         display:block; /*tab用デザインなので、表示*/
