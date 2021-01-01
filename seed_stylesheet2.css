@@ -1,0 +1,390 @@
+/* すべての要素に対して box-sizing: border-box; を指定 */
+*{
+    box-sizing:border-box;
+}
+/*GitHub用*/ /*GitHubに公開しないときは消しとく*/
+@font-face {
+    font-family:'Great Vibes';
+    src: url('./GreatVibes-Regular.ttf');
+}
+/*bodyのフォントを決めます*/
+body{
+    font-family:'刻明朝 Regular';
+    width:100vw; /*ビューポートの幅に対する割合が100%*/  
+}
+.G{
+    font-family:'Great Vibes';
+}
+/*ヘッダーをつくります*/
+header{
+    width:100vw;
+    height:100px;
+    position:relative;
+    border-bottom:solid 1px rgba(108,129,129,0.5);
+
+}
+.ontitle{
+    padding:15px 0px 0px 50px;
+    font-size:20px;
+}
+.title{
+    position:absolute;
+    top:30%;
+    padding:0px 0px 0px 50px;
+    font-size:36px;
+
+}
+.search{
+    position:absolute;
+    bottom:8%;
+    right:15%
+}
+.search input {
+    height:30px;
+}
+.login{
+    position:absolute;
+    bottom:0%;
+    right:7%;
+    text-align:center;
+}
+.login li{
+    list-style:none;
+    font-size:20px;
+    margin:15px 5px 0px 5px;
+    padding:2px 5px 2px 5px;
+    border:solid 1px black;
+
+}
+.login a{
+    text-decoration:none;
+    display:inline-block; /*インラインブロックにして、高さ調節を可能にする*/
+    width:90px; /*高さをボックスと合わせる*/
+}
+
+/*mainを作ります*/
+.main{
+    width:100vw;
+    height:500px;
+    text-align:center;
+    float:left;
+    background-image:URL("./Insert_images/opacity_MV1.png");
+    border-bottom:solid 0.5px rgba(108,129,129,0.1);
+}
+.main-text{
+    display:inline-block;
+}
+.main-text h1{
+    margin-top:45px;
+    margin-bottom:50px;
+}
+.main-text p{
+    font-size:25px;
+    line-height:30px; /*pの行間を狭める*/
+}
+
+/*menuを作ります*/
+.menu{
+    width:100vw;
+    clear:both; /*divどうしの重なり回避するため*/
+}
+/*menu1を作ります*/
+.menu1{
+    /*background-color:pink;*/
+    border-bottom:solid 1px rgba(108,129,129,0.3);
+    width:100vw;
+    height:500px;
+    position:relative;
+}
+.rec1{
+    /*background-color:gray;*/
+    position:absolute;
+    width:40%;
+    height:100%;
+    bottom:0%;
+    left:37%;
+    text-align:center;
+    
+}
+.western{
+    /*background-color:green;*/
+    width:35%;
+    height:100%;
+    position:absolute;
+    bottom:0%;
+    left:0%;
+    position:relative;
+}
+.img1{
+    position:absolute;
+    bottom:10%;
+    right:0%;
+}
+.wp1{
+    text-align:right;
+    font-size:30px;
+    padding-top:20%;
+    margin:0px;
+}
+.wp2{
+    text-align:right;
+    font-size:20px;
+    margin:0px;
+}
+.carrot{
+    position:absolute; /*tomatoと重ねることで、divどうしの上下関係を除去*/
+    bottom:0%;
+}
+.carrot p{
+    font-size:25px;
+    text-align:right;
+    margin:0px 0px 20px 0px;
+}
+.tomato p{
+    font-size:25px;
+    text-align:right;
+    margin:0px 0px 20px 0px;
+}
+.tomato{
+    position:absolute;
+    bottom:0%;
+    right:18%;
+}
+.img1{
+    box-shadow:4px 4px 4px gray;
+}
+.img2{
+    box-shadow:4px 4px 4px gray;
+}
+.img3{
+    box-shadow:4px 4px 4px gray;
+}
+.recommend{
+    margin-top:25%;
+    margin-right:17%;
+    font-size:30px;
+}
+
+/*menu2を作ります*/
+.menu2{
+    /*background-color:red;*/
+    border-bottom:solid 1px rgba(108,129,129,0.3);
+    width:100vw;
+    height:500px;
+    position:relative;
+}
+.rec2{
+    /*background-color:blue;*/
+    position:absolute;
+    width:40%;
+    height:100%;
+    bottom:0%;
+    left:55%;
+    text-align:center;
+    
+}
+.kyo{
+    /*background-color:yellow;*/
+    width:35%;
+    height:100%;
+    position:absolute;
+    bottom:0%;
+    left:18%;
+    position:relative;
+}
+.img4{
+    position:absolute;
+    bottom:10%;
+    right:0%;
+}
+.kp1{
+    text-align:right;
+    font-size:30px;
+    padding-top:20%;
+    margin:0px;
+}
+.kp2{
+    text-align:right;
+    font-size:20px;
+    margin:0px;
+}
+.eggplant{
+    position:absolute; /*tomatoと重ねることで、divどうしの上下関係を除去*/
+    bottom:0%;
+}
+.eggplant p{
+    font-size:25px;
+    text-align:right;
+    margin:0px 0px 20px 0px;
+}
+.pumpkin p{
+    font-size:25px;
+    text-align:right;
+    margin:0px 0px 20px 0px;
+}
+.pumpkin{
+    position:absolute;
+    bottom:0%;
+    right:18%;
+}
+.img4{
+    box-shadow:4px 4px 4px gray;
+}
+.img5{
+    box-shadow:4px 4px 4px gray;
+}
+.img6{
+    box-shadow:4px 4px 4px gray;
+}
+.recommend2{
+    margin-top:25%;
+    margin-right:17%;
+    font-size:30px;
+}
+
+/*menu3を作ります*/
+.menu3{
+    /*background-color:pink;*/
+    border-bottom:solid 1px rgba(108,129,129,0.3);
+    width:100vw;
+    height:500px;
+    position:relative;
+}
+.rec3{
+    /*background-color:gray;*/
+    position:absolute;
+    width:40%;
+    height:100%;
+    bottom:0%;
+    left:37%;
+    text-align:center;
+    
+}
+.flower{
+    /*background-color:green;*/
+    width:35%;
+    height:100%;
+    position:absolute;
+    bottom:0%;
+    left:0%;
+    position:relative;
+}
+.img7{
+    position:absolute;
+    bottom:10%;
+    right:0%;
+}
+.fl1{
+    text-align:right;
+    font-size:30px;
+    padding-top:20%;
+    margin:0px;
+}
+.fl2{
+    text-align:right;
+    font-size:20px;
+    margin:0px;
+}
+.cosmos{
+    position:absolute; /*tomatoと重ねることで、divどうしの上下関係を除去*/
+    bottom:0%;
+}
+.cosmos p{
+    font-size:25px;
+    text-align:right;
+    margin:0px 0px 20px 0px;
+}
+.pansy p{
+    font-size:25px;
+    text-align:right;
+    margin:0px 0px 20px 0px;
+}
+.pansy{
+    position:absolute;
+    bottom:0%;
+    right:18%;
+}
+.img7{
+    box-shadow:4px 4px 4px gray;
+}
+.img8{
+    box-shadow:4px 4px 4px gray;
+}
+.img9{
+    box-shadow:4px 4px 4px gray;
+}
+.recommend3{
+    margin-top:25%;
+    margin-right:17%;
+    font-size:30px;
+}
+
+
+/*フッターを作ります*/
+footer{
+    position:relative;
+    width:100vw;
+    height:120px;
+}
+.footer-text{
+    font-size:25px;
+    margin-left:3%;
+}
+.footer-list1{
+    position:absolute;
+    top:5%;
+    right:20%;
+}
+.footer-list2{
+    position:absolute;
+    top:5%;
+    right:10%;
+}
+.footer-list1 li{
+    list-style:none;
+    font-size:20px;
+    line-height:30px;
+    border-bottom:solid 1px purple;
+}
+.footer-list1 a{
+    text-decoration:none;
+}
+.footer-list2 li{
+    list-style:none;
+    font-size:20px;
+    line-height:30px;
+    border-bottom:solid 1px purple;
+    text-align:center;
+}
+.footer-list2 a{
+    text-decoration:none;
+}
+
+/*レスポンシブデザインって大変そう。。*/
+@media(max-width:1000px){
+    .title{
+        font-size:30px;
+    }
+    .search{
+        position:absolute;
+        right:20%;
+        bottom:15%;
+    }
+    .login{
+        position:absolute;
+        bottom:0px;
+        right:5%;
+    }
+}
+@media(max-width:670px){
+    .title{
+        font-size:25px;
+        padding:10px 0px 0px 20px;
+    }
+    .search{
+        position:absolute;
+        right:20%;
+        bottom:15%;
+    }
+}
+
