@@ -1,3 +1,5 @@
+/*1000pxより大きい画面幅のときのデザインを作成しよう*/
+
 /* すべての要素に対して box-sizing: border-box; を指定 */
 *{
     box-sizing:border-box;
@@ -12,6 +14,7 @@ body{
     font-family:'刻明朝 Regular';
     width:100vw; /*ビューポートの幅に対する割合が100%*/  
 }
+/*Great Vibesを適用したいクラスにGreat Vibesを反映させる*/
 .G{
     font-family:'Great Vibes';
 }
@@ -22,6 +25,9 @@ header{
     position:relative;
     border-bottom:solid 1px rgba(108,129,129,0.5);
 
+}
+.menu-icon{
+    display:none;
 }
 .ontitle{
     padding:15px 0px 0px 50px;
@@ -37,7 +43,7 @@ header{
 .search{
     position:absolute;
     bottom:8%;
-    right:15%
+    right:20%
 }
 .search input {
     height:30px;
@@ -45,7 +51,7 @@ header{
 .login{
     position:absolute;
     bottom:0%;
-    right:7%;
+    right:5%;
     text-align:center;
 }
 .login li{
@@ -53,13 +59,22 @@ header{
     font-size:20px;
     margin:15px 5px 0px 5px;
     padding:2px 5px 2px 5px;
-    border:solid 1px black;
+    border:solid 1px rgba(108,129,129,1);
+    border-radius:5px;
 
 }
 .login a{
     text-decoration:none;
     display:inline-block; /*インラインブロックにして、高さ調節を可能にする*/
     width:90px; /*高さをボックスと合わせる*/
+    color:purple;
+}
+.search input{
+    border:solid 1px rgba(108,129,129,1);
+    border-radius:5px;
+}
+.fas{
+    color: purple;
 }
 
 /*mainを作ります*/
@@ -96,40 +111,62 @@ header{
     height:500px;
     position:relative;
 }
+/*wr1を作ります*/
+.wr1{
+    /*background-color:orange;*/
+    width:1000px;
+    height:100%;
+    position:absolute;
+    left:3%;
+    position:relative;
+}
 .rec1{
     /*background-color:gray;*/
+    /*opacity:0.6;*/
     position:absolute;
-    width:40%;
+    width:450px;
     height:100%;
     bottom:0%;
-    left:37%;
+    left:40%;
     text-align:center;
     
 }
 .western{
     /*background-color:green;*/
-    width:35%;
+    width:350px;
     height:100%;
     position:absolute;
     bottom:0%;
-    left:0%;
+    left:3%;
     position:relative;
+    text-align:right;
 }
-.img1{
+.img1-pc{
+    display:block; /*PC用デザインなので、表示*/
     position:absolute;
     bottom:10%;
     right:0%;
 }
+.img1-tab{
+    display:none; /*タブレット用デザインなので、非表示*/
+}
+.img1-sp{
+    display:none; /*スマホ用デザインなので、非表示*/
+}
 .wp1{
     text-align:right;
     font-size:30px;
-    padding-top:20%;
+    padding-top:175px;
     margin:0px;
+    display:inline-block;
+    border-bottom:solid 0.5px rgba(0,0,0,0.3);
+    line-height:14px;
 }
 .wp2{
     text-align:right;
     font-size:20px;
     margin:0px;
+    padding-top:10px;
 }
 .carrot{
     position:absolute; /*tomatoと重ねることで、divどうしの上下関係を除去*/
@@ -148,65 +185,99 @@ header{
 .tomato{
     position:absolute;
     bottom:0%;
-    right:18%;
+    right:30px;
 }
-.img1{
+.img1-pc{
     box-shadow:4px 4px 4px gray;
 }
-.img2{
+.img2-pc{
     box-shadow:4px 4px 4px gray;
 }
-.img3{
+.img2-tab{
+    display:none;
+}
+.img2-sp{
+    display:none;
+}
+.img3-pc{
     box-shadow:4px 4px 4px gray;
+}
+.img3-tab{
+    display:none;
+}
+.img3-sp{
+    display:none;
 }
 .recommend{
-    margin-top:25%;
-    margin-right:17%;
+    margin-top:240px;
+    margin-right:10%;
     font-size:30px;
 }
 
 /*menu2を作ります*/
 .menu2{
-    /*background-color:red;*/
+    /*background-color:pink;*/
     border-bottom:solid 1px rgba(108,129,129,0.3);
     width:100vw;
     height:500px;
     position:relative;
 }
-.rec2{
-    /*background-color:blue;*/
+/*wr2を作ります*/
+.wr2{
+    /*background-color:orange;*/
+    width:1000px;
+    height:100%;
     position:absolute;
-    width:40%;
+    left:13%;
+    position:relative;
+}
+.rec2{
+    /*background-color:gray;*/
+    position:absolute;
+    width:450px;
     height:100%;
     bottom:0%;
-    left:55%;
+    left:40%;
     text-align:center;
     
 }
 .kyo{
-    /*background-color:yellow;*/
-    width:35%;
+    /*background-color:green;*/
+    width:350px;
     height:100%;
     position:absolute;
     bottom:0%;
-    left:18%;
+    left:3%;
     position:relative;
+    text-align:right;
 }
-.img4{
+.img4-pc{
+    display:block; /*PC用デザインなので、表示*/
     position:absolute;
     bottom:10%;
     right:0%;
+    box-shadow:4px 4px 4px gray;
+}
+.img4-tab{
+    display:none; /*タブレット用デザインなので、非表示*/
+}
+.img4-sp{
+    display:none; /*スマホ用デザインなので、非表示*/
 }
 .kp1{
     text-align:right;
     font-size:30px;
-    padding-top:20%;
+    padding-top:175px;
     margin:0px;
+    display:inline-block;
+    border-bottom:solid 0.5px rgba(0,0,0,0.3);
+    line-height:14px;
 }
 .kp2{
     text-align:right;
     font-size:20px;
     margin:0px;
+    padding-top:10px;
 }
 .eggplant{
     position:absolute; /*tomatoと重ねることで、divどうしの上下関係を除去*/
@@ -225,20 +296,32 @@ header{
 .pumpkin{
     position:absolute;
     bottom:0%;
-    right:18%;
+    right:30px;
 }
-.img4{
+.img5-pc{
     box-shadow:4px 4px 4px gray;
 }
-.img5{
+.img6-pc{
     box-shadow:4px 4px 4px gray;
 }
-.img6{
+.img5-tab{
+    display:none;
+}
+.img5-sp{
+    display:none;
+}
+.img6-pc{
     box-shadow:4px 4px 4px gray;
+}
+.img6-tab{
+    display:none;
+}
+.img6-sp{
+    display:none;
 }
 .recommend2{
-    margin-top:25%;
-    margin-right:17%;
+    margin-top:240px;
+    margin-right:10%;
     font-size:30px;
 }
 
@@ -250,40 +333,61 @@ header{
     height:500px;
     position:relative;
 }
+/*wr3を作ります*/
+.wr3{
+    /*background-color:orange;*/
+    width:1000px;
+    height:100%;
+    position:absolute;
+    left:3%;
+    position:relative;
+}
 .rec3{
     /*background-color:gray;*/
     position:absolute;
-    width:40%;
+    width:450px;
     height:100%;
     bottom:0%;
-    left:37%;
+    left:40%;
     text-align:center;
     
 }
 .flower{
     /*background-color:green;*/
-    width:35%;
+    width:350px;
     height:100%;
     position:absolute;
     bottom:0%;
-    left:0%;
+    left:3%;
     position:relative;
+    text-align:right;
 }
-.img7{
+.img7-pc{
+    display:block; /*PC用デザインなので、表示*/
     position:absolute;
     bottom:10%;
     right:0%;
 }
+.img7-tab{
+    display:none; /*タブレット用デザインなので、非表示*/
+}
+.img7-sp{
+    display:none; /*スマホ用デザインなので、非表示*/
+}
 .fl1{
     text-align:right;
     font-size:30px;
-    padding-top:20%;
+    padding-top:175px;
     margin:0px;
+    display:inline-block;
+    border-bottom:solid 0.5px rgba(0,0,0,0.3);
+    line-height:14px;
 }
 .fl2{
     text-align:right;
     font-size:20px;
     margin:0px;
+    padding-top:10px;
 }
 .cosmos{
     position:absolute; /*tomatoと重ねることで、divどうしの上下関係を除去*/
@@ -302,20 +406,32 @@ header{
 .pansy{
     position:absolute;
     bottom:0%;
-    right:18%;
+    right:30px;
 }
-.img7{
+.img7-pc{
     box-shadow:4px 4px 4px gray;
 }
-.img8{
+.img8-pc{
     box-shadow:4px 4px 4px gray;
 }
-.img9{
+.img8-tab{
+    display:none;
+}
+.img8-sp{
+    display:none;
+}
+.img9-pc{
     box-shadow:4px 4px 4px gray;
+}
+.img9-tab{
+    display:none;
+}
+.img9-sp{
+    display:none;
 }
 .recommend3{
-    margin-top:25%;
-    margin-right:17%;
+    margin-top:240px;
+    margin-right:10%;
     font-size:30px;
 }
 
@@ -333,7 +449,7 @@ footer{
 .footer-list1{
     position:absolute;
     top:5%;
-    right:20%;
+    right:25%;
 }
 .footer-list2{
     position:absolute;
@@ -348,6 +464,7 @@ footer{
 }
 .footer-list1 a{
     text-decoration:none;
+    color:purple;
 }
 .footer-list2 li{
     list-style:none;
@@ -358,33 +475,445 @@ footer{
 }
 .footer-list2 a{
     text-decoration:none;
+    color:purple;
 }
 
 /*レスポンシブデザインって大変そう。。*/
+
+/*vw:1000px以下の場合のデザイン作成(iPad 768pxを想定)*/
 @media(max-width:1000px){
-    .title{
-        font-size:30px;
+  /*menu1を修正します*/ 
+    /*画像をtb用に変更*/
+    .img1-pc, .img1-sp, .img2-pc, .img2-sp, .img3-pc, .img3-sp{
+        display:none;
     }
-    .search{
-        position:absolute;
-        right:20%;
-        bottom:15%;
+    .img1-tab, .img2-tab, .img3-tab{
+        display:block;
     }
-    .login{
+    /*menu1を修正します*/
+    .menu-icon{
+        display:none;
+    }
+    .img1-tab{
+        display:block; /*tab用デザインなので、表示*/
         position:absolute;
-        bottom:0px;
+        bottom:0%;
+        right:0%;
+        box-shadow:4px 4px 4px gray;
+    }
+    .western{
+        height:50%;
+    }
+    .wp1 {
+        font-size:25px;
+        padding-top:15px;
+    }
+    .wp2 {
+        font-size:15px;
+        padding-top:10px;
+    }
+    .img2-tab{
+        box-shadow:4px 4px 4px gray;
+    }
+    .img3-tab{
+        box-shadow:4px 4px 4px gray;
+    }
+    .rec1{
+        left:25%;
+    }
+    .carrot p, .tomato p{
+        margin-top:5px;
+    }
+    .recommend{
+        font-size:25px;
+        margin-top:265px;
+    }
+  /*menu2を修正します*/ 
+    /*画像をtb用に変更*/
+    .img4-pc, .img4-sp, .img5-pc, .img5-sp, .img6-pc, .img6-sp{
+        display:none;
+    }
+    .img4-tab, .img5-tab, .img6-tab{
+        display:block;
+    }
+    /*menu2を修正します*/
+    .menu2{
+        /*background-color:pink;*/
+        border-bottom:solid 1px rgba(108,129,129,0.3);
+        width:100vw;
+        height:500px;
+        position:relative;
+    }
+    /*wr2を作ります*/
+    .wr2{
+        /*background-color:orange;*/
+        width:1000px;
+        height:100%;
+        position:absolute;
+        left:3%;
+        position:relative;
+    }
+    .rec2{
+        /*background-color:gray;*/
+        /*opacity:0.6;*/
+        position:absolute;
+        width:450px;
+        height:100%;
+        bottom:0%;
+        left:40%;
+        text-align:center;
+        
+    }
+    .kyo{
+        /*background-color:green;*/
+        width:350px;
+        height:50%;
+        position:absolute;
+        bottom:0%;
+        left:3%;
+        position:relative;
+        text-align:right;
+    }
+    .kp1{
+        text-align:right;
+        font-size:25px;
+        padding-top:15px;
+        margin:0px;
+        display:inline-block;
+        border-bottom:solid 0.5px rgba(0,0,0,0.3);
+        line-height:14px;
+    }
+    .kp2{
+        text-align:right;
+        font-size:15px;
+        margin:0px;
+        padding-top:10px;
+    }
+    .eggplant{
+        position:absolute; /*tomatoと重ねることで、divどうしの上下関係を除去*/
+        bottom:0%;
+    }
+    .eggplant p{
+        font-size:25px;
+        text-align:right;
+        margin:0px 0px 20px 0px;
+        margin-top:5px;
+    }
+    .pumpkin p{
+        font-size:25px;
+        text-align:right;
+        margin:0px 0px 20px 0px;
+        margin-top:5px;
+    }
+    .pumpkin{
+        position:absolute;
+        bottom:0%;
+        right:30px;
+    }
+    .recommend2{
+        margin-right:10%;
+        font-size:25px;
+        margin-top:265px;
+    }
+    .img4-tab{
+        position:absolute;
+        bottom:0%;
+        right:0%;
+        box-shadow:4px 4px 4px gray;
+    }
+    .img5-tab{
+        box-shadow:4px 4px 4px gray;
+    }
+    .img6-tab{
+        box-shadow:4px 4px 4px gray;
+    }
+    .rec2{
+        left:25%;
+    }
+    
+    /*menu3を修正します*/
+    /*画像をtab用に変更*/
+    .img7-pc, .img7-sp, .img8-pc, .img8-sp, .img9-pc, .img9-sp{
+        display:none;
+    }
+    .img7-tab, .img8-tab, .img9-tab{
+        display:block;
+    }
+    .img7-tab{
+        display:block; /*tab用デザインなので、表示*/
+        position:absolute;
+        bottom:0%;
+        right:0%;
+        box-shadow:4px 4px 4px gray;
+    }
+    .flower{
+        height:50%;
+    }
+    .fl1 {
+        font-size:25px;
+        padding-top:15px;
+    }
+    .fl2 {
+        font-size:15px;
+        padding-top:10px;
+    }
+    .img8-tab{
+        box-shadow:4px 4px 4px gray;
+    }
+    .img9-tab{
+        box-shadow:4px 4px 4px gray;
+    }
+    .rec3{
+        left:25%;
+    }
+    .cosmos p, .pansy p{
+        margin-top:5px;
+    }
+    .recommend3{
+        font-size:25px;
+        margin-top:265px;
+    }
+
+    /*フッターを修正します*/
+    .footer-list2{
         right:5%;
     }
+
+
 }
-@media(max-width:670px){
+/*vw:750px以下の場合(iPhone X/XS iOS12 375px想定)*/
+@media(max-width:750px){
+    /*ヘッダーを修正します*/
+    .ontitle{
+        font-size:15px;
+        padding-left:5px;
+    }
     .title{
         font-size:25px;
-        padding:10px 0px 0px 20px;
+        padding-left:5px;
+    }
+    .menu-icon{
+        display:block;
+        position:absolute;
+        right:10%;
+        
     }
     .search{
-        position:absolute;
-        right:20%;
-        bottom:15%;
+        display:none;
     }
+    .login{
+        display:none;
+    }
+    /*mainを修正します*/
+    .main{
+        height:450px;
+        background-size:cover; /*背景画像をなるだけ小さくして挿入*/
+    }
+    .main-text h1{
+        font-size:26px;
+    }
+    .main-text p{
+        font-size:20px;
+    }
+    /*menuを修正します*/
+    /*menu1を修正します*/
+    .img1-pc,.img1-tab,.img2-pc,.img2-tab,.img3-pc,.img3-tab{
+        display:none;
+    }
+    .img1-sp,.img2-sp,.img3-sp{
+        display:block;
+    }
+    .menu1{
+        height:450px;
+    }
+    .rec1{
+        /*background-color:green;*/
+        opacity:0.7;
+        width:337px;
+        height:50%;
+        left:3%;
+        top:50%;
+    }
+    .wr1{
+        /*background-color:blue;*/
+        opacity:0.9;
+        width:100vw;
+        height:100%;
+    }
+    .western{
+        width:281px;
+        /*background-color:yellow;*/
+        left:0%;
+        
+    }
+    .img1-sp{
+        position:absolute;
+        left:8%;
+        top:25%;
+    }
+    .wp1{
+        font-size:20px;
+        margin-right:50%;
+    }
+    .wp2{
+        font-size:15px;
+        padding-left:25%;
+        padding-top:5px;
+        text-align:left;
+    }
+    .carrot{
+        position:absolute;
+        left:0%;
+    }
+    .carrot p{
+        font-size:20px;
+    }
+    .tomato{
+        position:absolute;
+        left:50%;
+    }
+    .tomato p{
+        font-size:20px;
+    }
+    .recommend{
+        margin-top:25px;
+        margin-right:8%;
+        font-size:20px;
+    }
+    /*menu2を修正します*/
+    .img4-pc,.img4-tab,.img5-pc,.img5-tab,.img6-pc,.img6-tab{
+        display:none;
+    }
+    .img4-sp,.img5-sp,.img6-sp{
+        display:block;
+    }
+    .menu2{
+        height:450px;
+    }
+    .rec2{
+        /*background-color:green;*/
+        opacity:0.7;
+        width:337px;
+        height:50%;
+        left:3%;
+        top:50%;
+    }
+    .wr2{
+        /*background-color:blue;*/
+        opacity:0.9;
+        width:100vw;
+        height:100%;
+    }
+    .kyo{
+        width:281px;
+        /*background-color:yellow;*/
+        left:0%;
+        
+    }
+    .img4-sp{
+        position:absolute;
+        left:8%;
+        top:25%;
+    }
+    .kp1{
+        font-size:20px;
+        margin-right:50%;
+    }
+    .kp2{
+        font-size:15px;
+        padding-left:25%;
+        padding-top:5px;
+        text-align:left;
+    }
+    .eggplant{
+        position:absolute;
+        left:0%;
+    }
+    .eggplant p{
+        font-size:20px;
+    }
+    .pumpkin{
+        position:absolute;
+        left:50%;
+    }
+    .pumpkin p{
+        font-size:20px;
+    }
+    .recommend2{
+        margin-top:25px;
+        margin-right:8%;
+        font-size:20px;
+    }
+    /*menu3を修正します*/
+    .img7-pc,.img7-tab,.img8-pc,.img8-tab,.img9-pc,.img9-tab{
+        display:none;
+    }
+    .img7-sp,.img8-sp,.img9-sp{
+        display:block;
+    }
+    .menu3{
+        height:450px;
+    }
+    .rec3{
+        /*background-color:green;*/
+        opacity:0.7;
+        width:337px;
+        height:50%;
+        left:3%;
+        top:50%;
+    }
+    .wr3{
+        /*background-color:blue;*/
+        opacity:0.9;
+        width:100vw;
+        height:100%;
+    }
+    .flower{
+        width:281px;
+        /*background-color:yellow;*/
+        left:0%;
+        
+    }
+    .img7-sp{
+        position:absolute;
+        left:8%;
+        top:25%;
+    }
+    .fl1{
+        font-size:20px;
+        margin-right:75%;
+
+    }
+    .fl2{
+        font-size:15px;
+        padding-left:17%;
+        padding-top:5px;
+        text-align:left;
+    }
+    .cosmos{
+        position:absolute;
+        left:0%;
+    }
+    .cosmos p{
+        font-size:20px;
+    }
+    .pansy{
+        position:absolute;
+        left:50%;
+    }
+    .pansy p{
+        font-size:20px;
+    }
+    .recommend3{
+        margin-top:30px;
+        margin-right:8%;
+        font-size:20px;
+    }
+    /*フッターを修正します*/
+    .footer-list1 a, .footer-list2 a{
+        font-size:15px;
+    }
+
+
 }
 
