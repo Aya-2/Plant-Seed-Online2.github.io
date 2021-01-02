@@ -27,7 +27,7 @@ header{
 
 }
 .menu-icon{
-    display:none !important;
+    display:none;
     opacity:0; /*githubだと、menu-iconが消えてくれないので、透過させといた*/
 }
 .ontitle{
@@ -143,16 +143,16 @@ header{
     text-align:right;
 }
 .img1-pc{
-    display:block !important; /*PC用デザインなので、表示*/ 
+    display:block; /*PC用デザインなので、表示*/ 
     position:absolute;
     bottom:10%;
     right:0%;
 }
 .img1-tab{
-    display:none !important; /*タブレット用デザインなので、非表示*/
+    display:none; /*タブレット用デザインなので、非表示*/
 }
 .img1-sp{
-    display:none !important; /*スマホ用デザインなので、非表示*/
+    display:none; /*スマホ用デザインなので、非表示*/
 }
 .wp1{
     text-align:right;
@@ -195,19 +195,19 @@ header{
     box-shadow:4px 4px 4px gray;
 }
 .img2-tab{
-    display:none !important;
+    display:none;
 }
 .img2-sp{
-    display:none !important;
+    display:none;
 }
 .img3-pc{
     box-shadow:4px 4px 4px gray;
 }
 .img3-tab{
-    display:none !important;
+    display:none;
 }
 .img3-sp{
-    display:none !important;
+    display:none;
 }
 .recommend{
     margin-top:240px;
@@ -253,17 +253,17 @@ header{
     text-align:right;
 }
 .img4-pc{
-    display:block !important; /*PC用デザインなので、表示*/
+    display:block; /*PC用デザインなので、表示*/
     position:absolute;
     bottom:10%;
     right:0%;
     box-shadow:4px 4px 4px gray;
 }
 .img4-tab{
-    display:none !important;/*タブレット用デザインなので、非表示*/
+    display:none;/*タブレット用デザインなので、非表示*/
 }
 .img4-sp{
-    display:none !important; /*スマホ用デザインなので、非表示*/
+    display:none; /*スマホ用デザインなので、非表示*/
 }
 .kp1{
     text-align:right;
@@ -306,19 +306,19 @@ header{
     box-shadow:4px 4px 4px gray;
 }
 .img5-tab{
-    display:none !important;
+    display:none;
 }
 .img5-sp{
-    display:none !important;
+    display:none;
 }
 .img6-pc{
     box-shadow:4px 4px 4px gray;
 }
 .img6-tab{
-    display:none !important;
+    display:none;
 }
 .img6-sp{
-    display:none !important;
+    display:none;
 }
 .recommend2{
     margin-top:240px;
@@ -364,16 +364,16 @@ header{
     text-align:right;
 }
 .img7-pc{
-    display:block !important; /*PC用デザインなので、表示*/
+    display:block; /*PC用デザインなので、表示*/
     position:absolute;
     bottom:10%;
     right:0%;
 }
 .img7-tab{
-    display:none !important; /*タブレット用デザインなので、非表示*/
+    display:none; /*タブレット用デザインなので、非表示*/
 }
 .img7-sp{
-    display:none !important;/*スマホ用デザインなので、非表示*/
+    display:none;/*スマホ用デザインなので、非表示*/
 }
 .fl1{
     text-align:right;
@@ -416,19 +416,19 @@ header{
     box-shadow:4px 4px 4px gray;
 }
 .img8-tab{
-    display:none !important;
+    display:none;
 }
 .img8-sp{
-    display:none !important;
+    display:none;
 }
 .img9-pc{
     box-shadow:4px 4px 4px gray;
 }
 .img9-tab{
-    display:none !important;
+    display:none;
 }
 .img9-sp{
-    display:none !important;
+    display:none;
 }
 .recommend3{
     margin-top:240px;
@@ -730,7 +730,7 @@ footer{
     }
     .rec1{
         /*background-color:green;*/
-        opacity:0.7;
+        /*opacity:0.7;*/
         width:337px;
         height:50%;
         left:3%;
@@ -738,7 +738,7 @@ footer{
     }
     .wr1{
         /*background-color:blue;*/
-        opacity:0.9;
+        /*opacity:0.9;*/
         width:100vw;
         height:100%;
     }
@@ -794,7 +794,7 @@ footer{
     }
     .rec2{
         /*background-color:green;*/
-        opacity:0.7;
+        /*opacity:0.7;*/
         width:337px;
         height:50%;
         left:3%;
@@ -802,7 +802,7 @@ footer{
     }
     .wr2{
         /*background-color:blue;*/
-        opacity:0.9;
+        /*opacity:0.9;*/
         width:100vw;
         height:100%;
     }
@@ -858,7 +858,7 @@ footer{
     }
     .rec3{
         /*background-color:green;*/
-        opacity:0.7;
+        /*opacity:0.7;*/
         width:337px;
         height:50%;
         left:3%;
@@ -866,7 +866,7 @@ footer{
     }
     .wr3{
         /*background-color:blue;*/
-        opacity:0.9;
+        /*opacity:0.9;*/
         width:100vw;
         height:100%;
     }
