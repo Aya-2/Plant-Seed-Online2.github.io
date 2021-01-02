@@ -909,7 +909,13 @@ footer{
     }
     /*フッターを修正します*/
     .footer-list1 a, .footer-list2 a{
-        font-size:15px;
+        font-size:13px;
+    }
+    .footer-list1{
+        right:35%;
+    }
+    .footer-list2{
+        right:10%;
     }
 
 
