@@ -143,7 +143,7 @@ header{
     text-align:right;
 }
 .img1-pc{
-    display:block; /*PC用デザインなので、表示*/
+    display:block !important; /*PC用デザインなので、表示*/ 
     position:absolute;
     bottom:10%;
     right:0%;
@@ -253,7 +253,7 @@ header{
     text-align:right;
 }
 .img4-pc{
-    display:block; /*PC用デザインなので、表示*/
+    display:block !important; /*PC用デザインなので、表示*/
     position:absolute;
     bottom:10%;
     right:0%;
@@ -364,7 +364,7 @@ header{
     text-align:right;
 }
 .img7-pc{
-    display:block; /*PC用デザインなので、表示*/
+    display:block !important; /*PC用デザインなので、表示*/
     position:absolute;
     bottom:10%;
     right:0%;
@@ -489,7 +489,7 @@ footer{
         display:none !important;
     }
     .img1-tab, .img2-tab, .img3-tab{
-        display:block;
+        display:block !important;
     }
     /*menu1を修正します*/
     .menu-icon{
@@ -497,7 +497,7 @@ footer{
         opacity:none;
     }
     .img1-tab{
-        display:block; /*tab用デザインなので、表示*/
+        display:block !important; /*tab用デザインなので、表示*/
         position:absolute;
         bottom:0%;
         right:0%;
@@ -536,7 +536,7 @@ footer{
         display:none !important;
     }
     .img4-tab, .img5-tab, .img6-tab{
-        display:block;
+        display:block !important;
     }
     /*menu2を修正します*/
     .menu2{
@@ -639,10 +639,10 @@ footer{
         display:none !important;
     }
     .img7-tab, .img8-tab, .img9-tab{
-        display:block;
+        display:block !important;
     }
     .img7-tab{
-        display:block; /*tab用デザインなので、表示*/
+        display:block !important; /*tab用デザインなので、表示*/
         position:absolute;
         bottom:0%;
         right:0%;
@@ -695,7 +695,7 @@ footer{
         padding-left:5px;
     }
     .menu-icon{
-        display:block;
+        display:block !important;
         position:absolute;
         right:10%;
         
@@ -723,7 +723,7 @@ footer{
         display:none !important;
     }
     .img1-sp,.img2-sp,.img3-sp{
-        display:block;
+        display:block !important;
     }
     .menu1{
         height:450px;
@@ -787,7 +787,7 @@ footer{
         display:none !important;
     }
     .img4-sp,.img5-sp,.img6-sp{
-        display:block;
+        display:block !important;
     }
     .menu2{
         height:450px;
@@ -851,7 +851,7 @@ footer{
         display:none !important;
     }
     .img7-sp,.img8-sp,.img9-sp{
-        display:block;
+        display:block !important;
     }
     .menu3{
         height:450px;
