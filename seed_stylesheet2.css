@@ -28,7 +28,7 @@ header{
 }
 .menu-icon{
     display:none;
-    opacity:0; /*githubだと、menu-iconが消えてくれないので、透過させといた*/
+    /*opacity:0; /*githubだと、menu-iconが消えてくれないので、透過させといた*/
 }
 .ontitle{
     padding:15px 0px 0px 50px;
@@ -493,7 +493,7 @@ footer{
     /*menu1を修正します*/
     .menu-icon{
         display:none !important;
-        opacity:none;
+        /*opacity:none;*/
     }
     .img1-tab{
         display:block !important; /*tab用デザインなので、表示*/
@@ -696,7 +696,7 @@ footer{
         display:block !important;
         position:absolute;
         right:10%;
-        opacity:1 !important; /*デフォルトでopacity=0にしていたので、1に戻す*/
+        /*opacity:1 !important; /*デフォルトでopacity=0にしていたので、1に戻す*/
         
     }
     .search{
