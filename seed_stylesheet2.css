@@ -698,6 +698,7 @@ footer{
         display:block !important;
         position:absolute;
         right:10%;
+        opacity:1 !important; /*デフォルトでopacity=0にしていたので、1に戻す*/
         
     }
     .search{
@@ -724,6 +725,7 @@ footer{
     }
     .img1-sp,.img2-sp,.img3-sp{
         display:block !important;
+        box-shadow:4px 4px 4px gray;
     }
     .menu1{
         height:450px;
@@ -788,6 +790,7 @@ footer{
     }
     .img4-sp,.img5-sp,.img6-sp{
         display:block !important;
+        box-shadow:4px 4px 4px gray;
     }
     .menu2{
         height:450px;
@@ -852,6 +855,7 @@ footer{
     }
     .img7-sp,.img8-sp,.img9-sp{
         display:block !important;
+        box-shadow:4px 4px 4px gray;
     }
     .menu3{
         height:450px;
@@ -918,4 +922,5 @@ footer{
 
 
 }
+
 
