@@ -20,6 +20,10 @@ body{
 .G{
     font-family:'Great Vibes';
 }
+/*刻明朝を適用したいクラスに反映させる*/
+.K {
+    font-family:'刻明朝 Regular';
+}
 /*ヘッダーをつくります*/
 header{
     width:100vw;
