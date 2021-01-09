@@ -4,11 +4,6 @@
 *{
     box-sizing:border-box;
 }
-/*GitHub用*/ /*GitHubに公開しないときは消しとく*/
-@font-face {
-    font-family:'Great Vibes';
-    src: url('./GreatVibes-Regular.ttf') format('truetype');
-}
 
 /*bodyのフォントを決めます*/
 body{
