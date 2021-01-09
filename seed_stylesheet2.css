@@ -9,13 +9,11 @@
     font-family:'Great Vibes';
     src: url('./GreatVibes-Regular.ttf');
 }
-@font-face {
-    font-family:'刻明朝 Regular';
-    src: url('./font_1_kokumr_1.00_rls.ttf');
-}
+
 /*bodyのフォントを決めます*/
 body{
     font-family:'刻明朝 Regular';
+    src: url('./font_1_kokumr_1.00_rls.ttf');
     width:100vw; /*ビューポートの幅に対する割合が100%*/  
 }
 /*Great Vibesを適用したいクラスにGreat Vibesを反映させる*/
