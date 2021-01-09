@@ -142,16 +142,16 @@ header{
     text-align:right;
 }
 .img1-pc{
-    display:block; /*PC用デザインなので、表示*/ 
+    display:block !important; /*PC用デザインなので、表示*/ 
     position:absolute;
     bottom:10%;
     right:0%;
 }
 .img1-tab{
-    display:none; /*タブレット用デザインなので、非表示*/
+    display:none !important; /*タブレット用デザインなので、非表示*/
 }
 .img1-sp{
-    display:none; /*スマホ用デザインなので、非表示*/
+    display:none!important; /*スマホ用デザインなので、非表示*/
 }
 .wp1{
     text-align:right;
@@ -194,19 +194,19 @@ header{
     box-shadow:4px 4px 4px gray;
 }
 .img2-tab{
-    display:none;
+    display:none !important;
 }
 .img2-sp{
-    display:none;
+    display:none !important;
 }
 .img3-pc{
     box-shadow:4px 4px 4px gray;
 }
 .img3-tab{
-    display:none;
+    display:none !important;
 }
 .img3-sp{
-    display:none;
+    display:none !important;
 }
 .recommend{
     margin-top:240px;
@@ -252,17 +252,17 @@ header{
     text-align:right;
 }
 .img4-pc{
-    display:block; /*PC用デザインなので、表示*/
+    display:block !important; /*PC用デザインなので、表示*/
     position:absolute;
     bottom:10%;
     right:0%;
     box-shadow:4px 4px 4px gray;
 }
 .img4-tab{
-    display:none;/*タブレット用デザインなので、非表示*/
+    display:none !important;/*タブレット用デザインなので、非表示*/
 }
 .img4-sp{
-    display:none; /*スマホ用デザインなので、非表示*/
+    display:none !important; /*スマホ用デザインなので、非表示*/
 }
 .kp1{
     text-align:right;
@@ -305,19 +305,19 @@ header{
     box-shadow:4px 4px 4px gray;
 }
 .img5-tab{
-    display:none;
+    display:none !important;
 }
 .img5-sp{
-    display:none;
+    display:none !important;
 }
 .img6-pc{
     box-shadow:4px 4px 4px gray;
 }
 .img6-tab{
-    display:none;
+    display:none !important;
 }
 .img6-sp{
-    display:none;
+    display:none !important;
 }
 .recommend2{
     margin-top:240px;
@@ -363,16 +363,16 @@ header{
     text-align:right;
 }
 .img7-pc{
-    display:block; /*PC用デザインなので、表示*/
+    display:block !important; /*PC用デザインなので、表示*/
     position:absolute;
     bottom:10%;
     right:0%;
 }
 .img7-tab{
-    display:none; /*タブレット用デザインなので、非表示*/
+    display:none !important; /*タブレット用デザインなので、非表示*/
 }
 .img7-sp{
-    display:none;/*スマホ用デザインなので、非表示*/
+    display:none !important;/*スマホ用デザインなので、非表示*/
 }
 .fl1{
     text-align:right;
@@ -424,10 +424,10 @@ header{
     box-shadow:4px 4px 4px gray;
 }
 .img9-tab{
-    display:none;
+    display:none !important;
 }
 .img9-sp{
-    display:none;
+    display:none !important;
 }
 .recommend3{
     margin-top:240px;
