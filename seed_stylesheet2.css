@@ -12,7 +12,7 @@
 
 /*bodyのフォントを決めます*/
 body{
-    font-family:'刻明朝 Regular';
+    font-family:'kokumr Regular';
     src: url('./font_1_kokumr_1.00_rls.ttf');
     width:100vw; /*ビューポートの幅に対する割合が100%*/  
 }
@@ -22,7 +22,7 @@ body{
 }
 /*刻明朝を適用したいクラスに反映させる*/
 .K {
-    font-family:'刻明朝 Regular';
+    font-family:'kokumr Regular';
 }
 /*ヘッダーをつくります*/
 header{
