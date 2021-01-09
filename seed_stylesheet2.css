@@ -12,6 +12,8 @@
 
 /*bodyのフォントを決めます*/
 body{
+    font-family:'Great Vibes';
+    src: url('./GreatVibes-Regular.ttf') format('truetype')
     font-family:'kokumr Regular';
     src: url('./font_1_kokumr_1.00_rls.ttf');
     width:100vw; /*ビューポートの幅に対する割合が100%*/  
