@@ -10,7 +10,7 @@ body{
     font-family:'Great Vibes';
     src: url('./GreatVibes-Regular.ttf') format('truetype');
     font-family:'刻明朝';
-    src: url('https://cdn.leafscape.be/kokumin/font_1_kokumr_1.00_rls_web.woff2) format('woff2');
+    src: url('https://cdn.leafscape.be/kokumin/font_1_kokumr_1.00_rls_web.woff2') format('woff2');
     width:100vw; /*ビューポートの幅に対する割合が100%*/  
 }
 /*Great Vibesを適用したいクラスにGreat Vibesを反映させる*/
