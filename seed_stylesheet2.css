@@ -4,22 +4,19 @@
 *{
     box-sizing:border-box;
 }
-
+/*GitHub用*/ /*GitHubに公開しないときは消しとく*/
+@font-face {
+    font-family:'Great Vibes';
+    src: url('./GreatVibes-Regular.ttf');
+}
 /*bodyのフォントを決めます*/
 body{
-    font-family:'Great Vibes';
-    src: url('./GreatVibes-Regular.ttf') format('truetype');
-    font-family:'刻明朝';
-    src: url('font_1_kokumr_1.00_rls.ttf') format('truetype');
+    font-family:'刻明朝 Regular';
     width:100vw; /*ビューポートの幅に対する割合が100%*/  
 }
 /*Great Vibesを適用したいクラスにGreat Vibesを反映させる*/
 .G{
     font-family:'Great Vibes';
-}
-/*刻明朝を適用したいクラスに反映させる*/
-h1, p, .K {
-    font-family:'刻明朝';
 }
 /*ヘッダーをつくります*/
 header{
