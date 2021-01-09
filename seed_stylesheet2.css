@@ -7,7 +7,7 @@
 /*GitHub用*/ /*GitHubに公開しないときは消しとく*/
 @font-face {
     font-family:'Great Vibes';
-    src: url('./GreatVibes-Regular.ttf');
+    src: url('./GreatVibes-Regular.ttf') format('truetype');
 }
 
 /*bodyのフォントを決めます*/
