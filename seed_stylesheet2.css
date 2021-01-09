@@ -9,6 +9,10 @@
     font-family:'Great Vibes';
     src: url('./GreatVibes-Regular.ttf');
 }
+@font-face {
+    font-family:'刻明朝 Regular';
+    src: url('./刻明朝 Regular 標準.ttf');
+}
 /*bodyのフォントを決めます*/
 body{
     font-family:'刻明朝 Regular';
