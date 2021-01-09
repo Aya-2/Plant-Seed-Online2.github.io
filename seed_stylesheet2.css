@@ -10,7 +10,7 @@ body{
     font-family:'Great Vibes';
     src: url('./GreatVibes-Regular.ttf') format('truetype')
     font-family:'kokumr Regular';
-    src: url('./font_1_kokumr_1.00_rls.ttf');
+    src: url('./font_1_kokumr_1.00_rls.ttf') format('truetype');
     width:100vw; /*ビューポートの幅に対する割合が100%*/  
 }
 /*Great Vibesを適用したいクラスにGreat Vibesを反映させる*/
