@@ -18,7 +18,7 @@ body{
     font-family:'Great Vibes';
 }
 /*刻明朝を適用したいクラスに反映させる*/
-.K {
+h1, p {
     font-family:'kokumr Regular';
 }
 /*ヘッダーをつくります*/
